@@ -1,0 +1,356 @@
+/* ========================================
+   SHOPMASTER - ESTILOS PERSONALIZADOS
+   ======================================== */
+
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
+    background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+    color: #ffc107 !important;
+}
+
+.cart-badge {
+    background-color: #28a745;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   FILTROS
+   ======================================== */
+.filters {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    font-weight: 500;
+    color: #007BFF;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* ========================================
+   TARJETAS DE PRODUCTOS
+   ======================================== */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.product-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.product-category {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   BOTONES
+   ======================================== */
+.btn-primary {
+    background: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-success:hover {
+    background: #218838;
+}
+
+/* ========================================
+   MODAL
+   ======================================== */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-product-image {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin: 20px auto;
+    display: block;
+}
+
+/* ========================================
+   CARRITO DE COMPRAS
+   ======================================== */
+.cart-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quantity-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* ========================================
+   FORMULARIO DE PAGO
+   ======================================== */
+.payment-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-input {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="%23007BFF" d="M38 8H10c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h28c2.2 0 4-1.8 4-4V12c0-2.2-1.8-4-4-4zM10 14h28v4H10v-4zm0 18v-8h28v8H10z"/></svg>') no-repeat 10px center;
+    background-size: 30px;
+    padding-left: 50px;
+}
+
+/* ========================================
+   PANEL DE USUARIO
+   ======================================== */
+.user-panel {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.purchase-history-item {
+    border-left: 4px solid #007BFF;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.purchase-history-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+/* ========================================
+   MAPA DE CONTACTO
+   ======================================== */
+#map {
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ========================================
+   SPINNER DE CARGA
+   ======================================== */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cart-item-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .product-title {
+        font-size: 1rem;
+        height: auto;
+    }
+}
